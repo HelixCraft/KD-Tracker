@@ -196,14 +196,9 @@ public class StatsScreen extends Screen {
     }
     
     /**
-     * SECOND LAYER OF DEFENSE: Override renderBlurredBackground to be a no-op.
-     * This catches any call path that goes through Screen directly rather than GameRenderer.
-     * Combined with the BlurMixin, this ensures NO blur effect is applied to this screen.
+     * Note: renderBlurredBackground() override removed for MC 1.21-1.21.2 compatibility.
+     * BlurMixin handles blur cancellation for these versions.
      */
-    @Override
-    protected void renderBlurredBackground() {
-        // Intentionally empty - blur completely disabled for StatsScreen
-    }
     
     @Override
     public void render(GuiGraphics graphics, int mouseX, int mouseY, float partialTick) {

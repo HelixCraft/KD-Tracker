@@ -1,0 +1,33 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Fabric Loom: 1.15.4
+:remapping sources
+
+> Task :compileJava
+/home/timon/devhub/KD Tracker/src/main/java/com/helixcraft/kdtracker/ui/StatsScreen.java:203: Fehler: Methode überschreibt oder implementiert keine Methode aus einem Supertyp
+    @Override
+    ^
+1 Fehler
+
+> Task :compileJava FAILED
+
+[Incubating] Problems report is available at: file:///home/timon/devhub/KD%20Tracker/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler output below.
+  /home/timon/devhub/KD Tracker/src/main/java/com/helixcraft/kdtracker/ui/StatsScreen.java:203: Fehler: Methode überschreibt oder implementiert keine Methode aus einem Supertyp
+      @Override
+      ^
+  1 Fehler
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 57s
+1 actionable task: 1 executed
