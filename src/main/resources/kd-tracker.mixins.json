@@ -1,14 +1,19 @@
 {
-	"required": true,
-	"package": "com.helixcraft.kdtracker.mixin",
-	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-		"ExampleMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
-	},
-	"overwrites": {
-		"requireAnnotations": true
-	}
+  "required": true,
+  "package": "com.helixcraft.kdtracker.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "BlurMixin",
+    "ClientPacketListenerMixin",
+    "MinecraftMixin",
+    "LocalPlayerMixin",
+    "ClientLevelMixin",
+    "PlayerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
 }
