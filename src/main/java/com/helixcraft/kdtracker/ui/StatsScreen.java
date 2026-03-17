@@ -131,7 +131,7 @@ public class StatsScreen extends Screen {
             
             // Bottom buttons - properly centered within panel
             int buttonWidth = (PANEL_WIDTH - PANEL_PADDING * 2 - 10) / 2;
-            int bottomY = panelTop + panelHeight - 45;
+            int bottomY = panelTop + panelHeight - 65;
             
             // Export button
             this.addRenderableWidget(Button.builder(
@@ -150,14 +150,14 @@ public class StatsScreen extends Screen {
             this.addRenderableWidget(Button.builder(
                 Component.literal("Close"),
                 button -> this.onClose()
-            ).bounds(panelLeft + PANEL_PADDING, panelTop + panelHeight - 20, closeButtonWidth, 20).build());
+            ).bounds(panelLeft + PANEL_PADDING, panelTop + panelHeight - 40, closeButtonWidth, 20).build());
         } else {
             // Close button for Current Server tab - centered within panel
             int closeButtonWidth = PANEL_WIDTH - PANEL_PADDING * 2;
             this.addRenderableWidget(Button.builder(
                 Component.literal("Close"),
                 button -> this.onClose()
-            ).bounds(panelLeft + PANEL_PADDING, panelTop + panelHeight - 20, closeButtonWidth, 20).build());
+            ).bounds(panelLeft + PANEL_PADDING, panelTop + panelHeight - 40, closeButtonWidth, 20).build());
         }
     }
     
