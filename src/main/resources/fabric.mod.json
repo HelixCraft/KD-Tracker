@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "kd-tracker",
+  "version": "${version}",
+  "name": "ServerKD Tracker",
+  "description": "Track your kills, deaths, and K/D ratio on multiplayer servers. Features session stats, kill streaks, time-based filtering, and data export.",
+  "authors": ["HelixCraft"],
+  "contact": {
+    "homepage": "https://github.com/helixcraft/serverkd",
+    "sources": "https://github.com/helixcraft/serverkd"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/kd-tracker/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.helixcraft.kdtracker.KDTracker"]
+  },
+  "mixins": ["kd-tracker.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.2",
+    "minecraft": ">=1.21.3 <=1.21.5",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
