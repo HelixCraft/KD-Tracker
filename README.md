@@ -106,11 +106,4 @@ Stats are stored in `.minecraft/config/serverkd/data.json` in the following form
 
 ## License
 
-This mod is licensed under CC0-1.0.
-
-## Notes
-
-- This is a **client-side only** mod - it does not need to be installed on servers
-- Singleplayer worlds are completely ignored
-- Only multiplayer server stats are tracked
-- Stats are saved locally and never sent to any external server
+This project is licensed under the [GNU General Public License v3.0](LICENSE).
